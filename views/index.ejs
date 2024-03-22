@@ -1,5 +1,25 @@
 <%- include('partials/head') %>
-<%- include('partials/testing') %>
-fjdsklfjlsaf;a
-</body>
-</html>
+    <%- include('partials/testing') %>
+
+        <section class="heading-container">
+            <h1> Ontdek jouw Digital Hand and Footprint met SDG's </h1>
+            <article class="button-container">
+                <button id="calculator"> <a href="#sdgs">Calculator</a></button>
+                <button id="readmore"> <a href="/SDGreadmore">Informatie</a></button>
+            </article>
+            <p> DSG Statistieken </p>
+        </section>
+
+        <h3 id="sdgs">sdgs</h3>
+
+        <% sdgs.forEach(function(sdg) { %>
+            <label>
+                <input type="checkbox">
+                <img src="https://fdnd-agency.directus.app/assets/<%= sdg.icon %>" alt="<%= sdg.title %>" height="175px"
+                    width="175px">
+            </label>
+            <% }) %>
+
+                </body>
+
+                </html>

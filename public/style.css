@@ -1,0 +1,77 @@
+/* HEADING */
+html {
+    scroll-behavior: smooth;
+}
+
+.heading-container {
+    background: rgb(32, 197, 224);
+    background: linear-gradient(35deg, rgba(32, 197, 224, 0.7786764363948704) 23%, rgba(249, 192, 30, 0.7954831590839461) 78%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    max-width: 25ch;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    gap: 1.5em;
+
+    & button {
+        height: 6em;
+        width: 20em;
+        border: none;
+        box-shadow: 2px 2px 2px 2px black;
+    }
+}
+
+.button-container button a {
+    font-size: 20px;
+    text-decoration: none;
+    color: darkblue;
+    cursor: pointer;
+}
+
+.heading-container p {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 5em;
+}
+
+/* NAVIGATION */
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: end;
+    margin: 1.5em 2em 0 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* SDG IMAGES */
+label img {
+    filter: grayscale(0);
+}
+
+label img:hover,
+label img:focus {
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
