@@ -72,6 +72,11 @@ label img:focus {
     filter: grayscale(1);
 }
 
+label input[type="checkbox"]:checked~img {
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
 input[type="checkbox"] {
     display: none;
 }
