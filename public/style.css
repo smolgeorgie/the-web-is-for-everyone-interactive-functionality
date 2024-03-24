@@ -61,22 +61,39 @@ ul li {
     list-style: none;
 }
 
+article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1em;
+}
+
 /* SDG IMAGES */
+label {
+    display: grid;
+    grid-template-areas: "a";
+    width: min-content;
+}
+
 label img {
-    filter: grayscale(0);
+    grid-area: a;
 }
 
 label img:hover,
 label img:focus {
     cursor: pointer;
-    filter: grayscale(1);
 }
 
 label input[type="checkbox"]:checked~img {
     cursor: pointer;
-    filter: grayscale(1);
+    border: 5px solid black;
+    box-shadow: 2px 2px 2px 2px grey;
 }
 
 input[type="checkbox"] {
-    display: none;
+    grid-area: a;
+    /* appearance: none; */
+
 }

@@ -12,14 +12,34 @@
 
         <h3 id="sdgs">sdgs</h3>
 
-        <% sdgs.forEach(function(sdg) { %>
-            <label>
-                <input type="checkbox">
-                <img src="https://fdnd-agency.directus.app/assets/<%= sdg.icon %>" alt="<%= sdg.title %>" height="175px"
-                    width="175px">
-            </label>
+        <span id="counter">0</span>
+        <span id="total">van de 10</span>
+
+        <article>
+            <% sdgs.forEach(function(sdg) { %>
+                <label>
+                    <input type="checkbox" class="checkbox">
+                    <img src="https://fdnd-agency.directus.app/assets/<%= sdg.icon %>" alt="<%= sdg.title %>"
+                        height="175px" width="175px">
+                </label>
+                <% }) %>
+        </article>
+
+
+        <script src="script.js"></script>
+
+        <!-- <article>
+            <% sdgs.forEach(function(sdg) { %>
+                <label>
+                    <input type="checkbox" class="checkbox">
+                    <img src="https://fdnd-agency.directus.app/assets/<%= sdg.icon %>" alt="<%= sdg.title %>"
+                        height="175px" width="175px">
+                </label>
             <% }) %>
+        </article>
+        <span id="counter">0</span>
+        <span id="total">van de 10</span> -->
 
-                </body>
+        </body>
 
-                </html>
+        </html>

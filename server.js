@@ -23,6 +23,8 @@ app.set('port', process.env.PORT || 8000)
 
 
 const apiUrl = 'https://fdnd-agency.directus.app/items'
+
+
 // Maak een GET route voor de index
 app.get('/', async function (request, response) {
   // Render index.ejs uit de views map
@@ -37,5 +39,6 @@ app.listen(app.get('port'), function () {
   console.log(`Application started on http://localhost:${app.get('port')}`)
 })
 
-// Scroll from Calculator to SDGs
+
+// Checkcounter SDG
 
