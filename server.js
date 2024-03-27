@@ -40,5 +40,14 @@ app.listen(app.get('port'), function () {
 })
 
 
-// Checkcounter SDG
+// POST route SDG
+app.post('/', (req, res) => { //post route naar / met response request
+  console.log(req.body); // log request body in console
+  const sdgId = req.body.sdg; // haal sdg uit request body
+  if (sdgId) {
+    res.redirect(`/score?sdgIds=${sdgId}`); // redirect naar scoreboard net de sdgId
+  } else {
+    res.redirect('/?error=true'); // redirect naar home met error
+  }
+});
 
